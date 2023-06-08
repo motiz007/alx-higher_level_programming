@@ -11,7 +11,7 @@ if __name__ == "__main__":
         print("{:d}: {}".format(ac, argv[1]))
     else:
         print("{:d} arguments:".format(ac))
-        num = 1 
+        num = 1
         while num < ac + 1:
             print("{:d}: {}".format(num, argv[num]))
             num += 1
