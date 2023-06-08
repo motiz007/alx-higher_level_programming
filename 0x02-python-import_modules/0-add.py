@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import add from add_0
+from add import add_0
 
 if __name__ == "__main__":
     a = 1
