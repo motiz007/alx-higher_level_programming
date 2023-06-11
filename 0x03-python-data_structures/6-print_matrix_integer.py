@@ -3,7 +3,9 @@ def print_matrix_integer(matrix=[[]]):
     if matrix != [[]]:
         for row in matrix:
             for item in row:
-                print("{:d}".format(item), end="")
-            print()
+                if item != row[-1]:
+                    print("{:d}".format(item), end="")
+                else:
+                    print()
     else:
         print()
