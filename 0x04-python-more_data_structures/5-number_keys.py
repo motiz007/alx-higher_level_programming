@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def number_keys(a_dictionary):
     keys = list(a_dictionary)
-    if keys == []:
+    if keys is None:
         return None
     count = 0
     for item in keys:
