@@ -8,4 +8,7 @@ def best_score(a_dictionary):
         if a_dictionary[keys] >= marks:
             marks = a_dictionary[keys]
             name = keys
-    return name
+    if marks == 0:
+        return None
+    else:
+        return name
