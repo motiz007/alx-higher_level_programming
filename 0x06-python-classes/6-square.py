@@ -71,11 +71,11 @@ class Square:
         """prints the square to stdout
         Return: None
         """
-        if self.__size == 0:
-            print()
-        else:
+        if self.__size > 0:
             for y in range(self.__position[1]):
                 print()
             for x in range(self.__size):
                 print(' ' * self.__position[0], end='')
                 print('#' * self.__size)
+        else:
+            print()
