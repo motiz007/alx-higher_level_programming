@@ -22,6 +22,7 @@ class Square:
             for x in range(self.__size):
                 str += ' ' * self.__position[0]
                 str += '#' * self.__size + '\n'
+        return str
 
     @property
     def size(self):
