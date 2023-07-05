@@ -82,3 +82,7 @@ class Rectangle:
                 if t != self.__height:
                     rec += '\n'
             return rec
+
+    def __repr__(self):
+        """returns the repr of the instance"""
+        return f"Rectangle({self.__width}, {self.__height})"
