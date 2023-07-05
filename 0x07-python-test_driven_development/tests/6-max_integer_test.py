@@ -32,4 +32,4 @@ class TestMaximumInteger(unittest.TestCase):
             max_integer(None)
 
         with self.assertRaises(TypeError):
-            max_integer(["Reggy", 78, 43, -4.5, "shicky"])
+            max_integer(["frank", 78, 43, -4.5, "motiz"])
