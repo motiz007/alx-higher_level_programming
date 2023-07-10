@@ -17,12 +17,10 @@ class BaseGeometry:
             name (str): the name
             value (int): the value to validate
         Raises:
-              TypeError: {} must be an integer".format(self.name)
-              ValueError: {} must be greater than 0".format(self.name)
+              TypeError: {} must be an integer".format(name)
+              ValueError: {} must be greater than 0".format(name)
         """
-        self.name = name
-        self.value = value
         if type(value) is not int:
-            raise TypeError("{} must be an integer".format(self.name))
+            raise TypeError("{:s} must be an integer".format(name))
         if value <= 0:
-            raise ValueError("{} must be greater than 0".format(self.name))
+            raise ValueError("{:s} must be greater than 0".format(name))

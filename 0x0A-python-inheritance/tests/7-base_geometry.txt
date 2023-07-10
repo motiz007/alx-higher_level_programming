@@ -65,4 +65,4 @@ TypeError: BaseGeometry.integer_validator() missing 1 required positional argume
 
 >>> bg.integer_validator({"b": 2}, (3, 4))
 Traceback (most recent call last):
-TypeError: {'b': 2} must be an integer
+TypeError: unsupported format string passed to dict.__format__
