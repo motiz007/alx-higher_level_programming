@@ -22,3 +22,11 @@ class Student:
                     n_rep[i] = rep[i]
             return n_rep
         return rep             
+
+    def reload_from_json(self, json):
+        """replaces all attributes of Student class"""
+        rep = self.__dict__
+        for i in rep:
+            for j in json:
+                if i == j:
+                    rep[i] = json[j]
