@@ -16,6 +16,8 @@ class Student:
         if type(attrs) is list:
             n_rep = {}
             for i in attrs:
+                if type(i) is not str:
+                    return rep
                 if i in rep:
                     n_rep[i] = rep[i]
             return n_rep
