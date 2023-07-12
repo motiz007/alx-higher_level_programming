@@ -10,13 +10,9 @@ load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 
 filename = "add_item.json"
-args_list = []
-del sys.argv[0]
-for i in sys.argv:
-    args_list.append(i)
 if exists(filename):
     old_args = load_from_json_file(filename)
-    old_args.extend(args_list)
+    old_args.extend(sys.argv[1:])
 else:
-    old_args = args_list
+    old_args = []
 save_to_json_file(old_args, filename)
