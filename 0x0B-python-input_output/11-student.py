@@ -21,7 +21,7 @@ class Student:
                 if i in rep:
                     n_rep[i] = rep[i]
             return n_rep
-        return rep             
+        return rep
 
     def reload_from_json(self, json):
         """replaces all attributes of Student class"""
