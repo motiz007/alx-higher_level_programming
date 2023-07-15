@@ -84,3 +84,14 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if key in l_update:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        self_dict = {
+			"id" : self.id,
+            "width" : self.width,
+            "height" : self.height,
+            "x" : self.x,
+            "y" : self.y
+		}
+
+        return self_dict
