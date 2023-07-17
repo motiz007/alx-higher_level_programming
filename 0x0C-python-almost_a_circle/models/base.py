@@ -8,6 +8,7 @@ import json
 class Base:
     """class documentation"""
     __nb_objects = 0
+
     def __init__(self, id=None):
         """module init
         Args:
