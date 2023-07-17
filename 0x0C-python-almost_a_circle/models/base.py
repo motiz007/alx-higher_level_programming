@@ -32,10 +32,10 @@ class Base:
         f_name = cls.__name__ + ".json"
         with open(f_name, mode="w", encoding="utf-8") as fd:
             if list_objs is None:
-                return fd.write(cls.to_json_string(None))
+                fd.write("[]")
 
             dict_list = []
             for obj in list_objs:
                 dict_list.append(obj.to_dictionary())
 
-            return fd.write(cls.to_json_string(dict_list))
+            fd.write(Base.to_json_string(dict_list))
